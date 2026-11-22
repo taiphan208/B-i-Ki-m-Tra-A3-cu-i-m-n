@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 850" role="img" aria-labelledby="title desc">
+<title id="title">Sân vận động bóng đá ban đêm</title><desc id="desc">Minh họa sân vận động với khán đài, đèn sân và sân cỏ.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#111b35"/><stop offset="1" stop-color="#344c76"/></linearGradient>
+  <linearGradient id="grass" x2="0" y2="1"><stop stop-color="#2d855a"/><stop offset="1" stop-color="#123f36"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fff4c7" stop-opacity=".8"/><stop offset="1" stop-color="#fff4c7" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="850" fill="url(#sky)"/>
+<circle cx="250" cy="140" r="210" fill="url(#glow)"/><circle cx="1350" cy="140" r="210" fill="url(#glow)"/>
+<g fill="#e9e3ce"><path d="M130 80h14v240h-14zM90 100h94v14H90zM1380 80h14v240h-14zM1340 100h94v14h-94z"/><g opacity=".8"><circle cx="105" cy="115" r="8"/><circle cx="125" cy="115" r="8"/><circle cx="145" cy="115" r="8"/><circle cx="165" cy="115" r="8"/><circle cx="1355" cy="115" r="8"/><circle cx="1375" cy="115" r="8"/><circle cx="1395" cy="115" r="8"/><circle cx="1415" cy="115" r="8"/></g></g>
+<path d="M0 360 220 270l280 105 300-130 300 130 280-105 220 90v260H0Z" fill="#182541"/>
+<path d="M0 420 240 340l260 90 300-105 300 105 260-90 240 80v185H0Z" fill="#263858"/>
+<g fill="#d9e6f1" opacity=".45"><path d="M40 390h1520v9H40z"/><path d="M80 430h1440v6H80z"/><path d="M140 470h1320v5H140z"/></g>
+<g fill="#fff" opacity=".75"><path d="M0 270h1600v3H0z"/><path d="M0 300h1600v2H0z"/></g>
+<path d="M0 610 800 515l800 95v240H0Z" fill="url(#grass)"/>
+<path d="M0 660 800 570l800 90v52L0 712Z" fill="#398a5d" opacity=".7"/>
+<path d="M800 555v295M250 622l550-67 550 67M370 850l430-295 430 295" stroke="#e9f2dc" stroke-opacity=".65" stroke-width="4" fill="none"/>
+<ellipse cx="800" cy="704" rx="110" ry="48" stroke="#e9f2dc" stroke-opacity=".65" stroke-width="4" fill="none"/>
+<g fill="#e9b949"><circle cx="800" cy="704" r="7"/><path d="M100 365h160v9H100zM1340 365h160v9h-160z"/></g>
+<g fill="#d92736" opacity=".85"><path d="M0 520h350v14H0zM1250 520h350v14h-350z"/></g>
+</svg>

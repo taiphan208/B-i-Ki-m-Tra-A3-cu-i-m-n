@@ -5,7 +5,11 @@
 **Công cụ được ghi nhận trong cuộc hội thoại này:** ChatGPT  
 **Ngày ghi nhật ký bản rà soát:** 21/11/2026
 
+<<<<<<< HEAD
 > Nhật ký dưới đây ghi lại các yêu cầu đã xuất hiện trong cuộc hội thoại hiện tại và phần hỗ trợ tương ứng. Nhật ký không khẳng định sinh viên đã tự chạy website, đã chụp minh chứng, đã tạo repository hoặc đã xuất bản GitHub Pages. Nếu có sử dụng thêm công cụ AI khác ngoài ChatGPT, người thực hiện cần bổ sung đúng tên công cụ và phần việc đã dùng trước khi nộp.
+=======
+> Nhật ký dưới đây ghi lại các yêu cầu đã xuất hiện trong cuộc hội thoại hiện tại và phần hỗ trợ tương ứng. Nhật ký không khẳng định sinh viên đã tự chạy website, đã chụp minh chứng, đã tạo repository hoặc đã xuất bản GitHub Pages. 
+>>>>>>> a728ca5 (A3: Complete Hanoi Warriors FC)
 
 ## 1. Nhật ký tương tác
 
@@ -32,6 +36,7 @@
 
 | Nội dung | Trạng thái tại thời điểm tạo AI_LOG |
 |---|---|
+<<<<<<< HEAD
 | Đã đọc và hiểu các thay đổi trong mã nguồn | Người học cần tự xác nhận |
 | Đã mở website trên máy Windows cá nhân | Chưa được xác nhận |
 | Đã kiểm thử responsive trên máy cá nhân | Chưa được xác nhận |
@@ -40,6 +45,16 @@
 | Đã bật GitHub Pages, mở URL công khai | Chưa được xác nhận |
 | Đã tự quay video demo | Chưa được xác nhận |
 | Có sử dụng công cụ AI khác | Người học cần khai báo nếu có |
+=======
+| Đã đọc và hiểu các thay đổi trong mã nguồn | xác nhận |
+| Đã mở website trên máy Windows cá nhân | xác nhận|
+| Đã kiểm thử responsive trên máy cá nhân | xác nhận|
+| Đã chụp ảnh minh chứng bằng thiết bị cá nhân | xác nhận|
+| Đã tạo GitHub Repository và push code | xác nhận|
+| Đã bật GitHub Pages, mở URL công khai | xác nhận|
+| Đã tự quay video demo | xác nhận|
+| Có sử dụng công cụ AI khác | không
+>>>>>>> a728ca5 (A3: Complete Hanoi Warriors FC)
 
 ## 4. Cam kết minh bạch
 
