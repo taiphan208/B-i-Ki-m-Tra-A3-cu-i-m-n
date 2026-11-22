@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Biểu mẫu đăng ký tham gia và liên hệ Hanoi Warriors FC." name="description"/>
+  <meta content="#101a32" name="theme-color"/>
+  <title>
+   Hanoi Warriors FC | Liên hệ
+  </title>
+  <link href="assets/images/club-logo.svg" rel="icon" type="image/svg+xml"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Bỏ qua điều hướng
+  </a>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a aria-label="Hanoi Warriors FC - Trang chủ" class="brand" href="index.html">
+     <img alt="Logo Hanoi Warriors FC" height="54" src="assets/images/club-logo.svg" width="54"/>
+     <span class="brand-copy">
+      <strong>
+       HANOI WARRIORS FC
+      </strong>
+      <small>
+       UNITED BY FOOTBALL
+      </small>
+     </span>
+    </a>
+    <nav aria-label="Điều hướng chính" class="main-nav">
+     <a href="index.html">
+      Trang chủ
+     </a>
+     <a href="schedule.html">
+      Lịch thi đấu
+     </a>
+     <a href="squad.html">
+      Đội hình
+     </a>
+     <a aria-current="page" class="active" href="contact.html">
+      Liên hệ
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container inner-page" id="main">
+   <section class="page-banner">
+    <p class="eyebrow eyebrow-light">
+     JOIN THE WARRIORS
+    </p>
+    <h1>
+     Kết nối với
+     <br/>
+     <span>
+      chúng tôi.
+     </span>
+    </h1>
+    <p>
+     Điền thông tin để bày tỏ mong muốn tham gia hoặc gửi lời nhắn tới câu lạc bộ.
+    </p>
+   </section>
+   <div class="contact-layout">
+    <section class="panel form-panel">
+     <div class="section-heading">
+      <div>
+       <p class="eyebrow">
+        REGISTRATION
+       </p>
+       <h2>
+        Thông tin đăng ký
+       </h2>
+      </div>
+      <span class="required-note">
+       * Bắt buộc
+      </span>
+     </div>
+     <form id="contact-form">
+      <div class="form-grid">
+       <div class="form-field">
+        <label for="fullname">
+         Họ và tên
+         <span>
+          *
+         </span>
+        </label>
+        <input autocomplete="name" id="fullname" maxlength="80" minlength="3" name="fullname" placeholder="Nguyễn Văn A" required="" type="text"/>
+       </div>
+       <div class="form-field">
+        <label for="email">
+         Email
+         <span>
+          *
+         </span>
+        </label>
+        <input autocomplete="email" id="email" name="email" placeholder="ban@example.com" required="" type="email"/>
+       </div>
+       <div class="form-field">
+        <label for="phone">
+         Số điện thoại
+         <span>
+          *
+         </span>
+        </label>
+        <input autocomplete="tel" id="phone" inputmode="numeric" name="phone" pattern="[0-9]{10,11}" placeholder="0912345678" required="" title="Nhập số điện thoại gồm 10 đến 11 chữ số" type="tel"/>
+       </div>
+       <div class="form-field">
+        <label for="role">
+         Bạn muốn tham gia với tư cách
+         <span>
+          *
+         </span>
+        </label>
+        <select id="role" name="role" required="">
+         <option value="">
+          Chọn vai trò
+         </option>
+         <option value="player">
+          Cầu thủ
+         </option>
+         <option value="fan">
+          Cổ động viên
+         </option>
+         <option value="member">
+          Hội viên
+         </option>
+         <option value="partner">
+          Đối tác / Tài trợ
+         </option>
+         <option value="other">
+          Khác
+         </option>
+        </select>
+       </div>
+       <div class="form-field form-field-full">
+        <label for="message">
+         Lời nhắn
+        </label>
+        <textarea id="message" maxlength="1000" name="message" placeholder="Chia sẻ thêm về mong muốn của bạn..." rows="5"></textarea>
+       </div>
+       <div class="form-field form-field-full">
+        <label class="consent-label">
+         <input id="consent" name="consent" required="" type="checkbox"/>
+         <span>
+          Tôi đồng ý cho sử dụng thông tin đã nhập trong phạm vi minh họa của biểu mẫu này.
+          <b>
+           *
+          </b>
+         </span>
+        </label>
+       </div>
+      </div>
+      <button class="button button-primary submit-button" type="submit">
+       Kiểm tra thông tin
+       <span aria-hidden="true">
+        →
+       </span>
+      </button>
+      <p class="form-help">
+       Bản demo chỉ kiểm tra dữ liệu ngay trên trình duyệt. Thông tin không được gửi đi hoặc lưu vào cơ sở dữ liệu.
+      </p>
+      <div aria-live="polite" class="form-result" hidden="" id="form-result" role="status">
+      </div>
+     </form>
+    </section>
+    <aside class="contact-aside">
+     <section class="sidebar-card sidebar-dark">
+      <p class="eyebrow eyebrow-light">
+       CONTACT DETAILS
+      </p>
+      <h2>
+       Hãy cùng
+       <br/>
+       kết nối.
+      </h2>
+      <div class="contact-detail">
+       <span aria-hidden="true">
+        ⌖
+       </span>
+       <div>
+        <strong>
+         Khu vực hoạt động
+        </strong>
+        <p>
+         Hà Nội, Việt Nam (thông tin minh họa)
+        </p>
+       </div>
+      </div>
+      <div class="contact-detail">
+       <span aria-hidden="true">
+        ✉
+       </span>
+       <div>
+        <strong>
+         Email
+        </strong>
+        <p>
+         taip3254@gmail.com
+        </p>
+       </div>
+      </div>
+      <div class="contact-detail">
+       <span aria-hidden="true">
+        ⚽
+       </span>
+       <div>
+        <strong>
+         Hoạt động
+        </strong>
+        <p>
+         Giao lưu bóng đá, kết nối thành viên và cộng đồng.
+        </p>
+       </div>
+      </div>
+     </section>
+     <section class="sidebar-card">
+      <p class="eyebrow">
+       LƯU Ý
+      </p>
+      <h2>
+       Về biểu mẫu
+      </h2>
+      <p>
+       Để nhận đăng ký thật, cần kết nối biểu mẫu với dịch vụ xử lý form hoặc xây dựng backend. Không nhập thông tin nhạy cảm vào bản demo.
+      </p>
+     </section>
+    </aside>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-inner">
+    <div class="footer-brand">
+     <img alt="" height="42" src="assets/images/club-logo.svg" width="42"/>
+     <div>
+      <strong>
+       HANOI WARRIORS FC
+      </strong>
+      <small>
+       UNITED BY FOOTBALL
+      </small>
+     </div>
+    </div>
+    <p>
+     © 2026 Hanoi Warriors FC · Dự án website tĩnh phục vụ học tập.
+    </p>
+    <a href="#main">
+     Lên đầu trang ↑
+    </a>
+   </div>
+  </footer>
+ </body>
+</html>
