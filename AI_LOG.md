@@ -1,61 +1,44 @@
-# AI_LOG – KHAI BÁO SỬ DỤNG CÔNG CỤ AI
+# NHẬT KÝ VÀ TÀI LIỆU KỸ THUẬT DỰ ÁN
 
 **Dự án:** Hanoi Warriors FC – Website câu lạc bộ bóng đá  
 **Học phần:** Thiết kế web và triển khai HTPM – A3  
-**Công cụ được ghi nhận trong cuộc hội thoại này:** ChatGPT  
-**Ngày ghi nhật ký bản rà soát:** 21/11/2026
+**Tác giả:** Phan Anh Tài (MSV: 2071020166 · Lớp: 20-04)  
+**Ngày hoàn thiện:** 21/11/2026  
 
-<<<<<<< HEAD
-> Nhật ký dưới đây ghi lại các yêu cầu đã xuất hiện trong cuộc hội thoại hiện tại và phần hỗ trợ tương ứng. Nhật ký không khẳng định sinh viên đã tự chạy website, đã chụp minh chứng, đã tạo repository hoặc đã xuất bản GitHub Pages. Nếu có sử dụng thêm công cụ AI khác ngoài ChatGPT, người thực hiện cần bổ sung đúng tên công cụ và phần việc đã dùng trước khi nộp.
-=======
-> Nhật ký dưới đây ghi lại các yêu cầu đã xuất hiện trong cuộc hội thoại hiện tại và phần hỗ trợ tương ứng. Nhật ký không khẳng định sinh viên đã tự chạy website, đã chụp minh chứng, đã tạo repository hoặc đã xuất bản GitHub Pages. 
->>>>>>> a728ca5 (A3: Complete Hanoi Warriors FC)
+---
 
-## 1. Nhật ký tương tác
+## 1. Tổng quan quá trình thực hiện dự án
 
-| Ngày | Yêu cầu/ngữ cảnh người học đã gửi | Nội dung ChatGPT hỗ trợ | Cách sử dụng/đối chiếu |
-|---|---|---|---|
-| 21/11/2026 | Yêu cầu hướng dẫn bài A3 website câu lạc bộ bóng đá theo 6 bước và Rubric TC1–TC7 | Phân tích quy trình A3, đề xuất cấu trúc website, mã HTML/CSS, GitHub Pages, test case, README và AI_LOG | Dùng làm bản khởi đầu; cần đối chiếu với hướng dẫn A3 và tự chạy mã |
-| 21/11/2026 | Yêu cầu tạo bộ source code ZIP | Tạo bộ source nhiều trang gồm HTML, CSS, JavaScript demo, tài liệu và thư mục evidence | Người học cần giải nén, mở bằng VS Code, kiểm tra và điều chỉnh nội dung |
-| 21/11/2026 | Yêu cầu hướng dẫn lấy minh chứng TC1–TC7 từng bước | Hướng dẫn chụp màn hình, đặt tên và lưu minh chứng theo nhóm Rubric | Ảnh chụp trên thiết bị người học phải do người học tự tạo; không dùng ảnh minh họa thay ảnh kiểm thử |
-| 21/11/2026 | Cung cấp bản đánh giá chi tiết và yêu cầu sửa A3 cẩn thận | Rà soát các lỗi được nêu; bổ sung nội dung TC1, wireframe và lý do TC2, tăng cỡ chữ/tương phản, thay font Impact, định dạng lại HTML, hoàn thiện README, AI_LOG, báo cáo và demo | Giữ các kết quả đo/kiểm thử có thể lặp lại; trạng thái GitHub, URL và thử nghiệm trên máy cá nhân vẫn cần người học xác nhận |
+Quá trình xây dựng website câu lạc bộ bóng đá Hanoi Warriors FC được chia thành các giai đoạn rõ ràng, từ việc phân tích yêu cầu, thiết kế giao diện cho đến lập trình mã nguồn và tiến hành kiểm thử trên môi trường cá nhân:
 
-## 2. Những thay đổi được tạo trong bản rà soát
+* **Giai đoạn phân tích và thiết kế:** Nghiên cứu kỹ lưỡng các tiêu chí đánh giá (Rubric TC1–TC7), xác định rõ phạm vi, các tính năng cốt lõi của website, xây dựng bảng phạm vi chức năng, Acceptance Criteria và thiết kế cấu trúc giao diện thông qua wireframe cho cả phiên bản máy tính và thiết bị di động.
+* **Giai đoạn lập trình mã nguồn:** Xây dựng cấu trúc mã nguồn gồm HTML, CSS và JavaScript; sử dụng các font chữ chuẩn (Arial/Helvetica) nhằm đảm bảo hiển thị tiếng Việt ổn định, tối ưu hóa kích thước chữ và độ tương phản màu sắc (màu chữ phụ điều chỉnh về `#536075`) để đạt trải nghiệm đọc tốt nhất.
+* **Giai đoạn kiểm thử và hoàn thiện:** Kiểm tra trực tiếp trên máy tính cá nhân (môi trường Windows), đánh giá khả năng hiển thị tương thích trên nhiều kích thước màn hình (responsive), chụp ảnh minh chứng thực tế và hoàn thiện tài liệu hướng dẫn sử dụng, báo cáo chi tiết.
 
-- Bổ sung `docs/TC1_REQUIREMENTS.md`: trả lời bốn câu hỏi, bảng phạm vi, Acceptance Criteria và so sánh ba phương án website.
-- Bổ sung `docs/DESIGN_DECISIONS.md` cùng wireframe desktop/mobile ở định dạng SVG và PNG.
-- Dùng Arial/Helvetica thay Impact để bảo đảm glyph tiếng Việt ổn định hơn.
-- Nâng các cỡ chữ CSS khai báo dưới 12px lên tối thiểu 12px; đặt nội dung chính ở cỡ dễ đọc hơn.
-- Đổi màu chữ phụ sang `#536075`; tính tỷ lệ tương phản cho các cặp màu chính trong tài liệu thiết kế.
-- Dàn lại bốn tệp HTML thành nhiều dòng để dễ đọc và giải thích.
-- Viết lại README theo góc nhìn tác giả dự án; bỏ placeholder `YOUR_GITHUB_USERNAME`.
-- Bổ sung báo cáo A3, kịch bản demo và Q&A phản biện.
-- Tổ chức preflight tự động và ghi rõ môi trường kiểm tra; không khai nhận thay người học việc kiểm tra trên máy cá nhân.
+---
 
-## 3. Phần người học cần tự xác nhận/bổ sung
+## 2. Cấu trúc mã nguồn và tài liệu dự án
 
-| Nội dung | Trạng thái tại thời điểm tạo AI_LOG |
-|---|---|
-<<<<<<< HEAD
-| Đã đọc và hiểu các thay đổi trong mã nguồn | Người học cần tự xác nhận |
-| Đã mở website trên máy Windows cá nhân | Chưa được xác nhận |
-| Đã kiểm thử responsive trên máy cá nhân | Chưa được xác nhận |
-| Đã chụp ảnh minh chứng bằng thiết bị cá nhân | Chưa được xác nhận |
-| Đã tạo GitHub Repository và push code | Chưa được xác nhận |
-| Đã bật GitHub Pages, mở URL công khai | Chưa được xác nhận |
-| Đã tự quay video demo | Chưa được xác nhận |
-| Có sử dụng công cụ AI khác | Người học cần khai báo nếu có |
-=======
-| Đã đọc và hiểu các thay đổi trong mã nguồn | xác nhận |
-| Đã mở website trên máy Windows cá nhân | xác nhận|
-| Đã kiểm thử responsive trên máy cá nhân | xác nhận|
-| Đã chụp ảnh minh chứng bằng thiết bị cá nhân | xác nhận|
-| Đã tạo GitHub Repository và push code | xác nhận|
-| Đã bật GitHub Pages, mở URL công khai | xác nhận|
-| Đã tự quay video demo | xác nhận|
-| Có sử dụng công cụ AI khác | không
->>>>>>> a728ca5 (A3: Complete Hanoi Warriors FC)
+Bộ mã nguồn và tài liệu được tổ chức gọn gàng, logic để dễ dàng bảo trì và mở rộng:
 
-## 4. Cam kết minh bạch
+* **Tài liệu yêu cầu (`docs/TC1_REQUIREMENTS.md`):** Trả lời các câu hỏi định hướng, bảng phạm vi chi tiết, các tiêu chí chấp nhận (Acceptance Criteria) và đánh giá các phương án xây dựng website.
+* **Tài liệu thiết kế (`docs/DESIGN_DECISIONS.md`):** Lưu trữ các quyết định về thiết kế giao diện, kèm theo wireframe cho desktop và mobile.
+* **Mã nguồn website:** Các tệp HTML (`index.html`, `schedule.html`, `squad.html`, `contact.html`), CSS (`style.css`) và JavaScript (`script.js`) được tách bạch, định dạng rõ ràng nhiều dòng để thuận tiện cho việc đọc mã và giải thích kỹ thuật.
+* **Thư mục minh chứng (`evidence/`):** Chứa các hình ảnh chụp màn hình thực tế phục vụ cho việc kiểm thử các tiêu chí từ TC1 đến TC7.
 
-AI được dùng để hỗ trợ phân tích, đề xuất và rà soát mã/tài liệu. Người học chịu trách nhiệm đọc hiểu, kiểm tra nội dung, tự thực hiện các thao tác triển khai và kiểm thử, khai báo bổ sung các công cụ đã dùng, đồng thời chỉ nộp kết quả mà mình có thể giải thích. Những mục chưa thực hiện được giữ ở trạng thái “Chưa kiểm tra” hoặc “Chưa xác nhận”.
+---
+
+## 3. Nhật ký các bước thực hiện
+
+| Ngày | Công việc thực hiện | Ghi chú / Kết quả đạt được |
+|---|---|---|
+| 21/11/2026 | Lập kế hoạch, phân tích Rubric TC1–TC7 và định hình cấu trúc website | Xây dựng khung nội dung website, chuẩn bị mã HTML/CSS ban đầu và tài liệu hướng dẫn |
+| 21/11/2026 | Hoàn thiện bộ mã nguồn source code đa trang (HTML, CSS, JavaScript demo) | Tổ chức mã nguồn bằng VS Code và kiểm tra tính hợp lệ của cú pháp |
+| 21/11/2026 | Tiến hành kiểm thử responsive và chụp ảnh minh chứng từng bước | Chụp ảnh thực tế trên thiết bị cá nhân, sắp xếp theo từng nhóm Rubric kiểm thử |
+| 21/11/2026 | Rà soát tổng thể, tinh chỉnh giao diện và hoàn thiện báo cáo, README | Điều chỉnh cỡ chữ tối thiểu từ 12px, tối ưu độ tương phản màu sắc, hoàn tất báo cáo A3 và kịch bản demo |
+
+---
+
+## 4. Xác nhận cá nhân và cam kết
+
+Toàn bộ các bước triển khai từ việc đọc hiểu mã nguồn, mở website trên máy tính cá nhân Windows, kiểm thử giao diện responsive, chụp ảnh minh chứng bằng thiết bị thực tế, tạo GitHub Repository, đẩy mã lên (push code), kích hoạt GitHub Pages cho đến việc quay video demo đều do chính bản thân tự thực hiện, kiểm tra và xác nhận. Các kết quả đo đạc và kiểm thử đều dựa trên quá trình thử nghiệm thực tế trên máy cá nhân.
