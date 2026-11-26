@@ -1107,3 +1107,90 @@ button, input, select, textarea {
   outline: 3px solid var(--gold);
   outline-offset: 3px;
 }
+
+/* BỔ SUNG: Cải thiện hiển thị trên màn hình nhỏ */
+
+/* Giúp các khối Grid/Flex không bị tràn chiều rộng */
+.container,
+.content-layout,
+.main-column,
+.sidebar,
+.contact-layout,
+.panel,
+.news-card,
+.player-card {
+  min-width: 0;
+}
+
+/* Ở màn hình máy tính bảng */
+@media (max-width: 960px) {
+  .content-layout {
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 18px;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.8fr);
+  }
+}
+
+/* Ở màn hình điện thoại */
+@media (max-width: 720px) {
+  .content-layout,
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-heading {
+    flex-wrap: wrap;
+  }
+
+  .sidebar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .panel {
+    padding: 18px;
+  }
+
+  .page-banner {
+    padding: 28px 18px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Điện thoại có màn hình nhỏ */
+@media (max-width: 500px) {
+  .container {
+    width: calc(100% - 24px);
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .main-nav a {
+    padding: 7px 8px;
+    font-size: 11px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .stats-strip {
+    padding: 16px 8px;
+  }
+
+  .stats-strip strong {
+    font-size: 16px;
+  }
+}
